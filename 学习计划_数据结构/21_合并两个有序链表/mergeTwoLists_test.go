@@ -28,25 +28,25 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 func Test21(t *testing.T) {
 	ln := mergeTwoLists(&ListNode{1, &ListNode{3, &ListNode{4, nil}}}, &ListNode{1, &ListNode{2, &ListNode{2, nil}}})
 	fmt.Println("-------")
-	for ln != nil && ln.Next != nil {
+	for ln != nil {
 		fmt.Println(ln)
 		ln = ln.Next
 	}
 	ln = mergeTwoLists(nil, &ListNode{1, &ListNode{2, &ListNode{2, nil}}})
 	fmt.Println("-------")
-	for ln != nil && ln.Next != nil {
+	for ln != nil {
 		fmt.Println(ln)
 		ln = ln.Next
 	}
 	ln = mergeTwoLists(nil, nil)
 	fmt.Println("-------")
-	for ln != nil && ln.Next != nil {
+	for ln != nil {
 		fmt.Println(ln)
 		ln = ln.Next
 	}
 	ln = mergeTwoLists(&ListNode{1, &ListNode{3, &ListNode{4, nil}}}, nil)
 	fmt.Println("-------")
-	for ln != nil && ln.Next != nil {
+	for ln != nil {
 		fmt.Println(ln)
 		ln = ln.Next
 	}
