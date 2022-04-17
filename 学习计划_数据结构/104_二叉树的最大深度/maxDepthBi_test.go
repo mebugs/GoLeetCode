@@ -31,7 +31,7 @@ func maxDepth1(root *TreeNode) int {
 }
 
 // 优化计算
-func maxDepth2(root *TreeNode) int {
+func maxDepth(root *TreeNode) int {
 	var induction func(root *TreeNode) int
 	induction = func(root *TreeNode) int {
 		if root == nil {
